@@ -1,16 +1,41 @@
-# weather_app
+🌍 World Time App
 
-A new Flutter project.
+A Flutter application that displays world timezones and their current time details.
 
-## Getting Started
+## Features
+- Browse all available timezones
+- View current date, time, and UTC offset for any timezone
+- Loading, error, and empty states
+- Pull-to-refresh support
 
-This project is a starting point for a Flutter application.
+## Tech Stack
+- Flutter
+- Dio (HTTP requests)
+- Flutter BLoC (state management)
 
-A few resources to get you started if this is your first Flutter project:
+Architecture
+lib/
+├── models/
+│   ├── timezone_model.dart
+│   └── world_time_model.dart
+├── services/
+│   └── time_service.dart
+├── cubits/
+│   ├── timezone/
+│   │   ├── timezone_cubit.dart
+│   │   └── timezone_state.dart
+│   └── time_detail/
+│       ├── time_detail_cubit.dart
+│       └── time_detail_state.dart
+└── screens/
+    ├── home_page.dart
+    └── details_page.dart
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ API
+This app uses [TimeAPI](https://timeapi.io) to fetch timezone data.
+
+Getting Started
+1. Clone the repo
+2. Run `flutter pub get`
+3. Run `flutter run`
