@@ -15,21 +15,21 @@ A Flutter application that displays world timezones and their current time detai
 
 Architecture
 lib/
-├── models/
-│   ├── timezone_model.dart
-│   └── world_time_model.dart
-├── services/
-│   └── time_service.dart
-├── cubits/
-│   ├── timezone/
-│   │   ├── timezone_cubit.dart
-│   │   └── timezone_state.dart
-│   └── time_detail/
-│       ├── time_detail_cubit.dart
-│       └── time_detail_state.dart
-└── screens/
-    ├── home_page.dart
-    └── details_page.dart
+models/
+   timezone_model.dart
+   world_time_model.dart
+services/
+     time_service.dart
+cubits/
+   timezone/
+   timezone_cubit.dart
+   timezone_state.dart
+   time_detail/
+   time_detail_cubit.dart
+   time_detail_state.dart
+ screens/
+    home_page.dart
+    details_page.dart
 
 
  API
