@@ -5,8 +5,6 @@ class TimeService {
   final Dio _dio = Dio(
     BaseOptions(
       baseUrl: 'http://timeapi.io/api',
-      connectTimeout: const Duration(seconds: 10),
-      receiveTimeout: const Duration(seconds: 10),
     ),
   );
 
